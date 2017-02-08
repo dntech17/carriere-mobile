@@ -1,2 +1,8 @@
-$blue: blue;
-$t: white;
+@import 'base';
+@import 'reset';
+
+header {
+  background-color: $blue;
+  height: 50px;
+  border-bottom: solid 1px red;
+}
