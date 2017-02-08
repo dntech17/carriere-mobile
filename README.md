@@ -1,6 +1,6 @@
 ## react-redux-cordova-boilerplate
 A boilerplate for a Redux-React Cordova application using Babel, Webpack and Gulp
-https://github.com/inderps/react-redux-cordova-boilerplate
+
 ### Development
 * Run `npm install`
 * Run `npm run dev`
