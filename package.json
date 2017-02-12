@@ -31,7 +31,7 @@
    "pouchdb-collate": "^6.1.1",
    "react": "^15.3.1",
    "react-dom": "^15.3.1",
-   "react-router": "^3.0.0",
+   "react-router": "^2.4.1",
    "react-redux": "^4.0.0",
    "react-router-redux": "^4.0.4",
    "react-intl": "^2.0.0-rc-1",

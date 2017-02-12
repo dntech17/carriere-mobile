@@ -1,7 +1,6 @@
 import React, {Component} from 'react'
 
-import Header from './Header'
-import WelcomePage from './pages/WelcomePage'
+import WelcomePage from './WelcomePage'
 import Footer from './Footer'
 
 class WizardContainer extends Component {
@@ -25,7 +24,7 @@ class WizardContainer extends Component {
     let {name, version} = this.props
     return (
       <div id='wizard-container'>
-        <Header name={name} version={version} />
+
         <WelcomePage />
         <Footer />
       </div>

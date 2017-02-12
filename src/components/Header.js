@@ -1,4 +1,6 @@
-import React, {Component} from 'react'
+import React, {Component, PropTypes} from 'react'
+import { FormattedMessage } from 'react-intl'
+
 
 class Header extends Component {
   constructor(props) {
@@ -6,16 +8,16 @@ class Header extends Component {
   }
 
   render() {
-    let {name, version} = this.props
-    console.log(name);
+    let {version} = this.props
     return (
       <header>
         <div className='header-title'>
-          <h3>{name}</h3>
+          <h1>
+            <FormattedMessage
+              id='app.name'
+              defaultMessage='Carriere'/>
+          </h1>
           <span>Version:{version}</span>
-        </div>
-        <div className='header-breadcrum'>
-          <span>Step 1 of 12</span>
         </div>
       </header>
     )
@@ -24,7 +26,6 @@ class Header extends Component {
 }
 
 Header.propTypes = {
-  name: React.PropTypes.string.isRequired,
   version: React.PropTypes.string.isRequired,
 }
 

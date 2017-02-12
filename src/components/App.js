@@ -1,18 +1,24 @@
-import React, {Component} from 'react'
+import React, {Component, PropTypes} from 'react'
+import Header from './Header'
 
-import WizardContainer from './WizardContainer'
-
-export default class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
   }
 
   render() {
     return (
-      <div id='app'>
-        <WizardContainer name='Carriere' version='1.0.0' />
+      <div id='app' className='container'>
+          <Header version='1.0.0' />
+          {this.props.children}
       </div>
     )
   }
 
 }
+
+App.propTypes = {
+  children: PropTypes.any
+}
+
+export default App
